@@ -1,16 +1,5 @@
-<project name="MonProjet" default="build" basedir=".">
-  <target name="clean">
-    <delete dir="build"/>
-  </target>
-  <target name="compile">
-    <mkdir dir="build/classes"/>
-    <javac srcdir="src" destdir="build/classes"/>
-  </target>
-  <target name="build" depends="clean, compile">
-    <jar destfile="build/MonProjet.jar" basedir="build/classes">
-      <manifest>
-        <attribute name="Main-Class" value="com.example.MonProjet"/>
-      </manifest>
-    </jar>
-  </target>
+<?xml version="1.0"?> 
+<project name="Hello World Project" default="info">
+<target name="info"> <echo> Hello World - Welcome to Simplilearn</echo> 
+</target> 
 </project>
